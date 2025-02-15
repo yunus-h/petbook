@@ -31,10 +31,6 @@ const petSchema = new mongoose.Schema({
     type: String,
     require: false,
   },
-  quantity: {
-    type: Number,
-    required: false,
-  },
 
 })
 
