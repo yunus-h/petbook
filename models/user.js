@@ -18,10 +18,6 @@ const petSchema = new mongoose.Schema({
     type: String,
     require: false,
   },
-  birthdate: {
-    type: Date,
-    require: false,
-  },
   characteristic: {
     type: String,
     require: false,
