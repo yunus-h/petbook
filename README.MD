@@ -28,11 +28,11 @@
 
 Here are the links on the PetBook project:
 
-Project planning link: https://trello.com/invite/b/67b0a19160d144685e39531d/ATTI481e9632311c0f6afb40d896b0fdb65bF33B3568/petbook-project
+- Project planning link: https://trello.com/invite/b/67b0a19160d144685e39531d/ATTI481e9632311c0f6afb40d896b0fdb65bF33B3568/petbook-project
 
-GitHub repo link: https://github.com/yunus-h/petbook.git
+- GitHub repo link: https://github.com/yunus-h/petbook.git
 
-Deployed project link: https://petbook-j4lvwo77k-yunus-projects-7d6e95be.vercel.app/
+- Deployed project link: https://petbook-j4lvwo77k-yunus-projects-7d6e95be.vercel.app/
 
 
 
@@ -40,19 +40,19 @@ First sign up for registration if you don't already have an account. Enter your 
 
 The following are the details of the pet data: 
 
-Pet Name : String
+- Pet Name : String
 
-Type : Selection of the animal type (Bird/Cat/Chicken/Cow/Dog/Duck/Fish/Horse/Pig/Rabbit/etc)
+- Type : Selection of the animal type (Bird/Cat/Chicken/Cow/Dog/Duck/Fish/Horse/Pig/Rabbit/etc)
 
-Gender : Selection of the pet gender (Male/Female/Other)
+- Gender : Selection of the pet gender (Male/Female/Other)
 
-Status: Selection of the pet status (Alive/Dead/Missing/Unknown)
+- Status: Selection of the pet status (Alive/Dead/Missing/Unknown)
 
-Characteristic: String
+- Characteristic: String
 
-Food: String
+- Food: String
 
-Bio: String
+- Bio: String
 
 
 ## Attributions: 
@@ -73,11 +73,12 @@ JavaScript, HTML, CSS, Express, MongoDB, EJS, NodeJS, NPM, GitHub
 
 ## Next steps:
 
-The current PetBook is very simple. But there are some steps that can make PetBook even better. 
+- The current PetBook is very simple. But there are some steps that can make PetBook even better. 
 
-Adding detailed data on users, such as email, address, hobbies, and so on.
+- Adding detailed data on users, such as email, address, hobbies, and so on.
 
-Adding detailed data on the pet, such as birthday, color, veterinarian, grooming salon, and so on.
+- Adding detailed data on the pet, such as birthday, color, veterinarian, grooming salon, and so on.
 
-PetBook would be great if there were pictures on user profiles, as well as on animal profiles. Also if all users in PetBook can connect with each other, and also see pictures and stories of their pets.
+- PetBook would be great if there were pictures on user profiles, as well as on animal profiles. Also if all users in PetBook can connect with each other, and also see pictures and stories of their pets.
 
+- Add data selection features such as displaying pets that are still alive, or displaying pets based on their type, for example only dogs or cats. 
