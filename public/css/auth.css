@@ -1,6 +1,5 @@
 body {
-  /* background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); */
-  background-color : var(--primary);
+  background-color : #b4bffd;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

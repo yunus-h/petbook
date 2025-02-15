@@ -39,11 +39,7 @@ const petSchema = new mongoose.Schema({
     type: Number,
     required: false,
   },
-  // image: {
-  //   type: File,
-  //   required: false,
-  // },
-  
+
 })
 
 const userSchema = new mongoose.Schema({
