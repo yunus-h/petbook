@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetBook</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <% if (user) { %>
+      <nav>
+        <a href="/">PetBook Home</a>
+        <a href="/users/${existingUser._id}">My Pets</a>
+        <a href="/auth/signout">Sign out</a>
+      </nav>
+    <% } %>
+    <h2 id="petbanner">🐶🐹🐦🐷🐻🐰🐱🐔🐟🐵🐭🐴🐮🐶🐹🐦🐷🐻🐰</h2>
+    
+  <h1>🐾 Welcome to PetBook!</h1>
+
+  <h2>Don't worry because PetBook will organize all your animals!</h2>
+  
+  <% if (!user) { %>
+    <h3>Please sign in to add, update, or delete your pets</h3>
+    <form action="/auth/signin">
+      <button type="submit"> Sign In </button>
+    </form>
+
+    <h3>Or Sign Up to create an account</h3>
+    <form action="/auth/signup">
+      <button type="submit"> Sign Up </button>
+    </form>
+
+  <% } %>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= user.firstname %>'s pets</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <nav>
+    <a href="/users/${existingUser._id}">My Pets</a>
+    <a href="/auth/signout">Sign out</a>
+  </nav>
+  <h2 id="petbanner">🐶🐹🐦🐷🐻🐰🐱🐔🐟🐵🐭🐴🐮🐶🐹🐦🐷🐻🐰</h2>
+  <h1>🐾 Welcome, <%= user.firstname %> <%= user.lastname %>!</h1>
+
+  <h2>Your pets: </h2>
+
+  <div class="showlist">
+    <% if (user.pets.length > 0) { %>
+      <ul>
+        <% user.pets.forEach(pet => { %>
+          <li><a href="/users/<%= user._id %>/pets/<%= pet._id %>"><%= pet.name %> - <%= pet.type %> - <%= pet.gender %> </a></li>
+        <% }) %>
+      </ul>
+    <% } else { %>
+      <p>You have no Pet!</p>
+    <% } %>
+  </div>
+  <br>
+  <form action="/users/<%= user._id %>/pets/new">
+    <button type="submit"> Add Pet </button>
+  </form>
+
+</body>
+</html>

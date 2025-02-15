@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add pet</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <nav>
+    <a href="/users/<%= userId %>">My Pets</a>
+    <a href="/auth/signout">Sign out</a>
+  </nav>
+
+    <h2 id="petbanner">🐶🐹🐦🐷🐻🐰🐱🐔🐟🐵🐭🐴🐮🐶🐹🐦🐷🐻🐰</h2>
+    <h1>🐾 Add your pet</h1>
+  
+    <div class="form">
+      <form action="/users/<%= userId %>/pets" method="post" >
+        <div>
+          <label for="name">Pet Name*: </label>
+          <input type="text" name="name" id="name" minlength="2" maxlength="20" placeholder="Your Pet Name" required>
+        </div>
+        
+        <div>
+          <label for="type">Type: </label>
+           <select name="type" id="type" required>
+            <option value="Unknown">Unknown</option>
+            <option value="Bird">Bird</option>
+            <option value="Cat">Cat</option>
+            <option value="Chicken">Chicken</option>
+            <option value="Cow">Cow</option>
+            <option value="Dog">Dog</option>
+            <option value="Duck">Duck</option>
+            <option value="Fish">Fish</option>
+            <option value="Horse">Horse</option>
+            <option value="Pig">Pig</option>
+            <option value="Rabbit">Rabbit</option>
+            <option value="Other">Other</option>
+           </select>
+        </div>
+    
+        <div>
+          <label for="gender">gender: </label>
+          <input type="radio" name="gender" id="gender" value="male"> Male
+          <input type="radio" name="gender" id="gender" value="female"> Female
+          <input type="radio" name="gender" id="gender" value="other" checked> Other 
+        </div>
+        
+        <div>
+          <label for="status">Status: </label>
+          <select name="status" id="status"> 
+            <option value="Unknown">Unknown</option>
+            <option value="Alive">Alive</option>
+            <option value="Dead">Dead</option>
+            <option value="Missing">Missing</option>
+          </select>
+        </div>
+   
+        <div>
+          <label for="characteristic">Characteristic: </label>
+          <input type="text" name="characteristic" id="characteristic">
+        </div>
+    
+        <div>
+          <label for="food">Food: </label>
+          <input type="text" name="food" id="food">
+        </div>
+        <div>
+          <label for="bio">Bio: </label>
+          <textarea name="bio" rows="5" cols="30" id="bio" > 
+    
+          </textarea>
+        </div>
+  
+        <div class="button">
+          <button type="submit">Add Pet</button>
+          <button type="reset">  Reset  </button>
+        </div>
+  
+    
+      </form>
+    </div>
+
+</body>
+</html>

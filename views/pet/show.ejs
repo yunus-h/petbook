@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Details</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <nav>
+    <a href="/users/<%= userId %>">My Pets</a>
+    <a href="/auth/signout">Sign out</a>
+  </nav>
+  <h2 id="petbanner">🐶🐹🐦🐷🐻🐰🐱🐔🐟🐵🐭🐴🐮🐶🐹🐦🐷🐻🐰</h2>
+  <h1>🐾 Pet Details</h1>
+
+  <p><strong>Pet name: </strong> <%= pet.name %></p>
+  <p><strong>Type: </strong> <%= pet.type %></p>
+  <p><strong>Gender: </strong> <%= pet.gender %></p>
+  <p><strong>Status: </strong><%= pet.status %></p>
+  <p><strong>Characteristic: </strong><%= pet.characteristic %></p>
+  <p><strong>Food: </strong><%= pet.food %></p>
+  <p><strong>Bio: </strong><%= pet.bio %></p>
+ 
+  <div class="button">
+    <div>
+      <form action="/users/<%= userId %>/pets/<%= pet._id %>/edit">
+        <button type="submit"> Edit </button>
+      </form>
+    </div>
+
+    <div>
+      <form action="/users/<%= userId %>/pets/<%= pet._id %>?_method=DELETE" method="post">
+        <button type="submit">Delete </button>
+      </form>
+    </div>
+
+  </div>
+  
+</body>
+</html>

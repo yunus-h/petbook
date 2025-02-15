@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up</title>
+  <link rel="stylesheet" href="/css/auth.css">
+  <!-- <link rel="stylesheet" href="/css/styles.css"> -->
+</head>
+
+<body>
+
+  <nav>
+    <a href="/"> PetBook Home</a>
+    <a href="/auth/signin">Sign In</a>
+  </nav>
+
+  <h2 id="petbanner">🐶🐹🐦🐷🐻🐰🐱🐔🐟🐵🐭🐴🐮🐶🐹🐦🐷🐻🐰</h2>
+  <h1>Welcome to PetBook! Please sign up</h1>
+
+  <form action="/auth/signup" method="POST">
+    <div class="input-group">
+      <label for="username">Username: </label>
+      <input type="text" name="username" id="username" required>
+    </div>
+
+    <div class="input-group">
+      <label for="password">Password: </label>
+      <input type="password" name="password" id="password" required>
+    </div>
+
+    <div class="input-group">
+      <label for="confirmPassword">Confirm Password: </label>
+      <input type="password" name="confirmPassword" id="confirmPassword" required>
+    </div>
+
+    <div class="input-group">
+      <label for="firstname">First Name: </label>
+      <input type="text" name="firstname" id="firstname" placeholder="ex. John">
+    </div>
+
+    <div class="input-group">
+      <label for="lastname">Last Name: </label>
+      <input type="text" name="lastname" id="lastname" placeholder="ex. Smith">
+    </div>
+
+    <button type="submit">Sign up</button>
+
+  </form>
+</body>
+</html>
