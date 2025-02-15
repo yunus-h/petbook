@@ -32,7 +32,7 @@ Here are the links on the PetBook project:
 
 - GitHub repo link: https://github.com/yunus-h/petbook.git
 
-- Deployed project link: https://petbook-j4lvwo77k-yunus-projects-7d6e95be.vercel.app/
+- Deployed project link: https://petbook-coral.vercel.app/
 
 
 
