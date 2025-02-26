@@ -42,15 +42,12 @@ router.post('/:id/pets', async (req, res) => {
   const type = req.body.type;
   const gender = req.body.gender;
   const status = req.body.status;
-  const birthdate = req.body.birthdate;
   const characteristic = req.body.characteristic;
   const food = req.body.food;
   const bio = req.body.bio;
 
-  const quantity = req.body.quantity;
-
   const user = await User.findById(userId);
-  user.pets.push({name, type, gender, status, birthdate, characteristic, food, bio, quantity});
+  user.pets.push({name, type, gender, status, characteristic, food, bio});
 
   await user.save();
 
@@ -64,12 +61,9 @@ router.put('/:id/pets/:petId', async (req, res) => {
   const newType = req.body.type;
   const newGender = req.body.gender;
   const newStatus = req.body.status;
-  const newBirthdate = req.body.birthdate;
   const newCharacteristic = req.body.characteristic;
   const newFood = req.body.food;
   const newBio = req.body.bio;
-
-  const newQuantity = req.body.quantity;
 
   const user = await User.findById(userId);
   const pet = user.pets.id(petId);
@@ -78,14 +72,10 @@ router.put('/:id/pets/:petId', async (req, res) => {
   pet.type = newType;
   pet.gender = newGender;
   pet.status = newStatus;
-  pet.birthdate = newBirthdate;
   pet.characteristic = newCharacteristic;
   pet.food = newFood;
   pet.bio = newBio;
   
-  pet.quantity = newQuantity;
-  
-
   await user.save();
 
   res.redirect(`/users/${userId}/pets/${petId}`);
